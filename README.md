@@ -5,7 +5,7 @@ It's called Limo because it uses lemon to make something nice"*
 
 Limo is build with lemon.markets to make a fully customizable trading app. 
 
-> lemon.markets is the broker, not limo 
+> limo is just a wrapper of lemon.markets
 
 We aim to build an app everyone can enjoy.
 
