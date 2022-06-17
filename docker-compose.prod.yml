@@ -1,0 +1,29 @@
+version: '3'
+services:
+  nginx:
+    name: nginx
+    image: nginx:1.15-alpine
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx/:/etc/nginx/
+    networks:
+      - internal
+    depends_on:
+      - api
+      - web
+  api:
+    build:
+      context: ./api
+      dockerfile: ./Dockerfile
+    restart: unless-stopped
+    environment:
+      - MONGODB_USER=MyUsername
+      - MONGODB_PASSWORD=MyPassword
+      - MONGODB_HOST=MyDatabaseHost:27017
+      - MONGODB_NAME=MyDatabase
+  web:
+    build:
+      context: ./website
+      dockerfile: ./Dockerfile
+    restart: unless-stopped

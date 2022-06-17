@@ -1,0 +1,23 @@
+version: '3'
+services:
+  api:
+    name: api
+    networks:
+      - internal
+    depends_on:
+      - redis
+  redis:
+    name: redis
+    networks:
+      - internal
+  web:
+    name: web
+    networks:
+      - internal
+    depends_on:
+      - api
+
+networks:
+  internal:
+    name: internal
+    driver: bridge

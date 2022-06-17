@@ -1,0 +1,31 @@
+version: '3'
+services:
+  api:
+    build:
+      context: ./api
+      dockerfile: ./Dockerfile.local
+    environment:
+      - MONGODB_USER=root
+      - MONGODB_PASSWORD=root
+      - MONGODB_HOST=database:27017
+      - MONGODB_NAME=local_db
+    depends_on:
+      - database
+    ports:
+      - "3030:3000"
+  database:
+    image: mongo
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=root
+      - MONGO_INITDB_DATABASE=local_db
+    volumes:
+      - ./mongodb/data:/data/db
+  web:
+    build:
+      context: ./web
+      dockerfile: ./Dockerfile.local
+    ports:
+      - "3000:3000"
+    environment:
+      - API_HOST=api:3000
