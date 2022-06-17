@@ -3,3 +3,8 @@ mongodb
 
 # modules
 node_modules
+
+# cypress
+/cypress/videos
+/cypress/screenshots
+/cypress/downloads
