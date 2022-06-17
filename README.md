@@ -26,7 +26,7 @@ $ sh run.sh local
 ```
 Or (Windows)
 ```sh
-$ docker-compose -f docker-compose.yml -f docker-compose.local.yml up build
+$ docker-compose -f docker-compose.yml -f docker-compose.local.yml up --build
 ```
 Website will be running on port 3000
 and api on port 3030. 
