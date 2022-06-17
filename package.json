@@ -1,0 +1,23 @@
+{
+  "name": "limo-trading",
+  "version": "1.0.0",
+  "description": "*\"Limo is short for Limonade (german for lemonade).\r It's called Limo because it uses lemon to make something nice\"*",
+  "scripts": {
+    "cypress": "npx cypress run",
+    "cypress:open": "npx cypress open",
+    "test": "npm run cypress"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/limo-trading/limo-trading.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/limo-trading/limo-trading/issues"
+  },
+  "homepage": "https://github.com/limo-trading/limo-trading#readme",
+  "devDependencies": {
+    "cypress": "^10.1.0"
+  }
+}
