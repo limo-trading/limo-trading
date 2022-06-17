@@ -37,7 +37,7 @@ If you just want to work in one service, see instructions there. [See services](
 'Table with anchor links' 
 
 ## Contributing
-[See here](https://github.com/limo-trading/limo-trading/CONTRIBUTING.md)
+[Read more](https://github.com/limo-trading/limo-trading/CONTRIBUTING.md)
 
 ## Start Developing
 Read the instructions of the repo you want to work in first. 
