@@ -1,9 +1,12 @@
 [submodule "limo-api"]
-	path = limo-api
+	path = api
 	url = https://github.com/limo-trading/limo-api
 [submodule "limo-mobile"]
-	path = limo-mobile
+	path = mobile
 	url = https://github.com/limo-trading/limo-mobile
 [submodule "limo-website"]
-	path = limo-website
+	path = website
 	url = https://github.com/limo-trading/limo-website
+[submodule "secure"]
+	path = secure
+	url = https://github.com/limo-trading/secure
